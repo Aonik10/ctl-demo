@@ -1,0 +1,85 @@
+@import "../../styles/globals.module.scss";
+
+.title {
+    color: $white-color
+}
+
+.login {
+    @include flexCentered;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-color: $darker-blue;
+}
+
+.error_container{
+	height: 50px;
+}
+
+.message {
+  font-weight: 700;
+  font-size: 14px;
+  height: 0;
+  margin: 0
+}
+
+.error {
+    color: red;
+}
+
+.success {
+    color: green;
+}
+
+.login_form {
+    padding: 40px;
+    border-radius: 15px;
+    background-color: hsla(223, 57%, 25%, 0.3);
+}
+
+.login_btn {
+    width: 100%;
+}
+
+
+//flip effect
+
+.flip_card {
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+}
+  
+.flip_card_inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+}
+  
+.flip_card_active .flip_card_inner {
+	transform: rotateY(180deg);
+}
+  
+
+.flip_card_front, .flip_card_back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+  
+.flip_card_front {
+	background-color: $darker-blue;
+	color: black;
+}
+  
+
+.flip_card_back {
+	background-color: $darker-blue;
+	color: white;
+	transform: rotateY(180deg);
+}

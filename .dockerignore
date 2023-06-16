@@ -1,0 +1,10 @@
+backend/images
+backend/venv
+backend/__pycache__
+backend/.idea
+backend/db_data/sql_app.db
+backend/.git
+backend/.env
+**/node_modules
+**/.git
+.env
