@@ -2,6 +2,8 @@
 
 La aplicación esta corriendo actualmente [aqui](http://ctl-demo.emipellegrino.com/#/login)
 
+El archivo .env esta incluido a propósito para facilitar la instalación de este demo.
+
 ## Instalación
 
 Para correr la aplicación de forma local utilizar estos comandos
